@@ -1,7 +1,7 @@
 import React from 'react';
 import OneProduct from './OneProduct';
 import './Products.css';
-
+import relatedProducts from '../data/relatedProducts.json';
 function Products() {
   return (
     <div className='products-container'>
@@ -16,13 +16,16 @@ function Products() {
         </div>
       </div>
       <div className='products-list'>
-        <OneProduct />
-        <OneProduct />
-        <OneProduct />
-        <OneProduct />
-        <OneProduct />
-        <OneProduct />
-        <OneProduct />
+        {relatedProducts.map((product) => (
+          <OneProduct
+            key={product.code}
+            title={product.title}
+            serialNumber={product.code}
+            rating={product.rating}
+            comment={product.comment}
+            price={product.price}
+          />
+        ))}
       </div>
     </div>
   );

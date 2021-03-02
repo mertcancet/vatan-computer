@@ -9,6 +9,10 @@
     line-height:2;
  
 }
+.footer-container-bottom{
+    width: 80%;
+    margin: 0 auto;
+}
 .footer-container-top span{
     font-weight: 600;
     padding-left: 48px;

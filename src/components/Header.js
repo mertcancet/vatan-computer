@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.css';
 import logo from '../assets/img/vatanlogo.svg';
+import { BasketContext } from '../contexts/BasketContext';
 function Header() {
+  const [basketItem, setBasketItem] = useContext(BasketContext);
+  console.log({ basketItem });
   return (
     <header className='header-container'>
       <div className='header-left'>
@@ -21,6 +24,7 @@ function Header() {
         <div className='header-right-basket'>
           <p>Sepetim</p>
           <i className='fas fa-shopping-cart'></i>
+          <span>{basketItem.length}</span>
         </div>
       </div>
     </header>

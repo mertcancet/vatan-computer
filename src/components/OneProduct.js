@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './OneProduct.css';
-function OneProduct() {
+import { BasketContext } from '../contexts/BasketContext';
+
+function OneProduct({ title, serialNumber, rating, comment, price }) {
+  const [addItem, setAddItem] = useContext(BasketContext);
   const [mouseInside, setMouseInside] = useState(false);
   const mouseEnter = () => {
     setMouseInside(true);
@@ -8,7 +11,12 @@ function OneProduct() {
   const mouseLeave = () => {
     setMouseInside(false);
   };
-
+  const addToBasket = () => {
+    const item = { title, serialNumber, price };
+    const state = (currentState) => [...currentState, item];
+    setAddItem(state);
+    
+  };
   return (
     <div
       className='product-card'
@@ -19,18 +27,18 @@ function OneProduct() {
       <br />
       <div className='product-rating'>
         <i className='fas fa-star' />
-        <span>4,6 </span>
+        <span>{rating}</span>
 
-        <span className='product-rating-comment'>(122 Yorum)</span>
+        <span className='product-rating-comment'>({comment} Yorum)</span>
       </div>
       <br />
       <div className='product-serino'>
-        <span>PA2500000TR</span>
+        <span>{serialNumber}</span>
       </div>
 
-      <p> IPHONE 6 16 GB AKILLI TELEFON UZAY GRİSİ</p>
+      <p>{title}</p>
 
-      <h2 className='product-price'>₺ 1.366</h2>
+      <h2 className='product-price'>₺ {price}</h2>
 
       {!mouseInside ? (
         <>
@@ -43,7 +51,7 @@ function OneProduct() {
         <div className='product-addBasket'>
           <i className='fas fa-shopping-basket' />
 
-          <button>Sepete Ekle</button>
+          <button onClick={addToBasket}>Sepete Ekle</button>
         </div>
       )}
     </div>

@@ -5,15 +5,18 @@ import Slider from './components/Slider';
 import Products from './components/Products';
 import BestSeller from './components/BestSeller';
 import Footer from './components/Footer';
+import { BasketProvider } from './contexts/BasketContext';
 function App() {
   return (
-    <div className='container'>
-      <Header />
-      <Slider />
-      <Products />
-      <BestSeller />
-      <Footer />
-    </div>
+    <BasketProvider>
+      <div className='container'>
+        <Header />
+        <Slider />
+        <Products />
+        <BestSeller />
+        <Footer />
+      </div>
+    </BasketProvider>
   );
 }
 
