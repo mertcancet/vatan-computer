@@ -4,6 +4,7 @@ import './App.css';
 import Slider from './components/Slider';
 import Products from './components/Products';
 import BestSeller from './components/BestSeller';
+import Footer from './components/Footer';
 function App() {
   return (
     <div className='container'>
@@ -11,11 +12,7 @@ function App() {
       <Slider />
       <Products />
       <BestSeller />
-      <Slider />
-      <Slider />
-      <Slider />
-      <Slider />
-      <Slider />
+      <Footer />
     </div>
   );
 }

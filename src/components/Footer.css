@@ -1,0 +1,35 @@
+.footer-container{
+    color:black;
+    
+}
+.footer-container-top{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    line-height:2;
+ 
+}
+.footer-container-top span{
+    font-weight: 600;
+    padding-left: 48px;
+}
+.footer-container li {
+    list-style: none;
+}
+.footer-corporate{
+    flex:1 0 33%;
+}
+.footer-categories{
+    flex:1 0 33%;
+}
+
+.footer-specialProduct{
+    flex:1 0 33%;
+}
+
+.footer-container-copyright{
+    float: left;
+}
+.footer-container-card{
+    float: right;
+}
