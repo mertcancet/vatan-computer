@@ -15,15 +15,16 @@ function Footer() {
             <li>Sıkca Sorulan Sorular</li>
             <li>İnsan Kaynakları</li>
             <li>Gizlilik Politikaları</li>
-            <li>İletişim</li>
-            <li>Vatan Card</li>
-            <li>Servis Takip Formu</li>
-            <li>Hakkımızda</li>
-            <li>Mağazalar</li>
-            <li>İşlem Rehberi</li>
           </ul>
         </div>
-
+        <ul className='footer-corporate-2'>
+          <li>İletişim</li>
+          <li>Vatan Card</li>
+          <li>Servis Takip Formu</li>
+          <li>Hakkımızda</li>
+          <li>Mağazalar</li>
+          <li>İşlem Rehberi</li>
+        </ul>
         <div className='footer-categories'>
           <span>KATEGORİLER</span>
           <ul>

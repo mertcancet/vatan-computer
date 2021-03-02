@@ -1,5 +1,5 @@
 .footer-container{
-    color:black;
+    color:#757575;
     
 }
 .footer-container-top{
@@ -17,14 +17,18 @@
     list-style: none;
 }
 .footer-corporate{
-    flex:1 0 33%;
+    flex:1 0 25%;
+}
+.footer-corporate-2{
+    flex:1 0 25%;
+    margin-top: 45px;
 }
 .footer-categories{
-    flex:1 0 33%;
+    flex:1 0 25%;
 }
 
 .footer-specialProduct{
-    flex:1 0 33%;
+    flex:1 0 25%;
 }
 
 .footer-container-copyright{
