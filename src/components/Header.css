@@ -1,0 +1,60 @@
+.header-container{
+    height:60px;
+    background-color:#1564BF ;
+    position: sticky;
+
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    color:#EEEEEE;
+}
+.header-container p {
+    display: inline-block;
+}
+
+.header-left{
+    
+    flex:1 0 25%;
+}
+.header-left-categories{
+    display: inline-block;
+  margin-right: 5px ;
+    float:right;
+
+}
+.header-left img {
+    height: 60px;
+    width: 100px;
+    float: right;
+}
+.header-container input{
+    flex:50%;
+    margin: 5px;
+    background-color: #4383CB;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+    color:#EEEEEE;
+    border: 0px;
+}
+.header-container input::placeholder{
+   
+    color:#EEEEEE;
+    text-align: center;
+    
+}
+.header-right{
+    flex: 1 0 25%;
+}
+
+.header-right-account{
+    display: inline-block;
+    margin-left: 25px;
+}
+.header-right-basket{
+    display: inline-block;
+    margin:15px 10px ;
+}
+.header-right i{
+    margin-left: 5px;
+}

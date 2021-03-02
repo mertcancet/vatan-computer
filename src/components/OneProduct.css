@@ -1,0 +1,29 @@
+.product-card{
+    flex: 1 0 20%;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+}
+.product-card:hover{
+    border: 1px solid #1564C0;
+}
+
+.product-rating{
+    color:#FF8E00;
+
+}
+.product-rating-comment{
+    color:#9E9E9E
+}
+.product-serino{
+    color:#9E9E9E;
+  
+}
+.product-price{
+    color:#1564BF
+}
+.product-shipping{
+    background-color:#E0E0E0 ;
+    color:#848484;
+    padding:5px;
+    border-radius: 5px;
+}

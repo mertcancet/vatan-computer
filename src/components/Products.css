@@ -1,0 +1,20 @@
+.product-container{
+    width: 80%;
+    margin: auto;
+}
+.product-container h1{
+    display: inline-block;
+    color: #424242;
+}
+
+
+.product-favorite{
+  
+    color: #4C6F9B;
+    margin-top: 25px;
+}
+.product-list{
+    display: flex;
+    flex-wrap:wrap;
+    
+}
