@@ -4,18 +4,18 @@ import './Products.css';
 
 function Products() {
   return (
-    <div className='product-container'>
-      <div classna>
+    <div className='products-container'>
+      <div>
         <h1>Öne Çıkan Ürünler</h1>
 
-        <div className='product-favorite'>
+        <div className='products-favorite'>
           <h3>
             {' '}
             Tüm öne çıkan ürünler <i className='fas fa-arrow-right' />
           </h3>
         </div>
       </div>
-      <div className='product-list'>
+      <div className='products-list'>
         <OneProduct />
         <OneProduct />
         <OneProduct />

@@ -2,11 +2,13 @@
     height:60px;
     background-color:#1564BF ;
     position: sticky;
-
+    top:0;
+    width: 100%;
     display:flex;
     align-items: center;
     justify-content:center;
     color:#EEEEEE;
+    z-index: 15;
 }
 .header-container p {
     display: inline-block;
