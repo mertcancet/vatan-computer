@@ -6,7 +6,9 @@ function Products() {
   return (
     <div className='products-container'>
       <div>
-        <h1>Öne Çıkan Ürünler</h1>
+        <div>
+          <h1>Öne Çıkan Ürünler</h1>
+        </div>
 
         <div className='products-favorite'>
           <h3>

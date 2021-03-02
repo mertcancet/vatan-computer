@@ -10,6 +10,16 @@ SwiperCore.use([Navigation, Pagination]);
 function BestSeller() {
   return (
     <div className='bestseller-container'>
+      <div>
+        <h1>Çok Satanlar</h1>
+
+        <div className='products-favorite'>
+          <h3>
+            {' '}
+            Tüm çok satanlar <i className='fas fa-arrow-right' />
+          </h3>
+        </div>
+      </div>
       <Swiper
         spaceBetween={0}
         slidesPerView={5}
